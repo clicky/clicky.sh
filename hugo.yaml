@@ -1,0 +1,37 @@
+blank_issues_enabled: false
+baseURL: "https://clicketyclackety.github.io/"
+title: "Clickety Clackety"
+description: "A blog about coding and junk"
+keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
+author: Me
+theme: PaperMod
+defaultTheme: auto # dark, light
+contact_links:
+  - name: PaperMod Discussions
+    url: https://github.com/adityatelange/hugo-PaperMod/discussions
+    about: Please ask and answer questions/doubts here, DO NOT open an issue for questions.
+
+params:
+  homeInfoParams:
+    Title: Musings of Clicketyclackety
+    Content: If I think of something clever I'll put it here
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/clicketyclackety"
+
+ShowReadingTime: true
+ShowShareButtons: true
+ShowPostNavLinks: true
+ShowBreadCrumbs: true
+ShowCodeCopyButtons: false
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+disableSpecial1stPost: false
+disableScrollToTop: false
+comments: false
+hidemeta: false
+hideSummary: false
+showtoc: false
+tocopen: false

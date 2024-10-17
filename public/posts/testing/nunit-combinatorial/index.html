@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Advanced Combinatorial Testing in NUnit | Clickety Clackety</title>
+<meta name="keywords" content="nunit, testing, combinatorial">
+<meta name="description" content="A guide on upgrading your testing potential">
+<meta name="author" content="Me">
+<link rel="canonical" href="http://localhost:1313/posts/testing/nunit-combinatorial/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/testing/nunit-combinatorial/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Clickety Clackety (Alt + H)">Clickety Clackety</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Advanced Combinatorial Testing in NUnit
+    </h1>
+    <div class="post-description">
+      A guide on upgrading your testing potential
+    </div>
+    <div class="post-meta"><span title='2024-08-17 00:00:00 +0000 UTC'>August 17, 2024</span>&nbsp;·&nbsp;Me
+
+</div>
+  </header> 
+  <div class="post-content"><p>If you&rsquo;re reading this article, I&rsquo;m going to assume you have a basic understanding of <a href="https://docs.nunit.org/articles/nunit/writing-tests/attributes/combinatorial.html">combinatorial</a> and parameterising NUnit tests and now you are pushing up to the limits of this system.</p>
+<p>For the sake of simplicity, let&rsquo;s examine a simple Combinatorial Test</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#a6e22e">[Test, Combinatorial]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> MyTest(
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [Values(1, 2, 3)]</span> <span style="color:#66d9ef">int</span> x,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [Values(&#34;A&#34;, &#34;B&#34;)]</span> <span style="color:#66d9ef">string</span> s)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>As the parameters must be entered into an attribute, we are limited to constant values, ints, doubles, strings, enums etc.</p>
+<p>But what if our tests need to be more complex than that? If we need to compare mutable objects? Maybe we have a collection of &ldquo;good&rdquo; elements and &ldquo;bad&rdquo; elements we want a set of tests to cycle through. Writing an SVG Editor I have a collection of good SVGs that I know must be valid, and a set of bad SVGs that have bad data and will/should fail gracefully. Every time a user posts an issue about my editor and their svg, I verify the SVG and if it passes the sniff test, add the SVG to the good pile and re-run all of my tests against it.</p>
+<p>So how can I maintain a comprehensive set of tests against this set of mutable objects?</p>
+<h1 id="my-first-attempt-indicies">My first attempt, indicies<a hidden class="anchor" aria-hidden="true" href="#my-first-attempt-indicies">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#a6e22e">[Values(1, 2, 3)]</span> <span style="color:#66d9ef">int</span> index
+</span></span></code></pre></div><p>By using indicies, which are constant, we can index into a list maintained elsewhere. Immediately however, I realised this has a few problems.</p>
+<ul>
+<li>It&rsquo;s not readable, when a new person looks at this test, what does this index mean?</li>
+<li>The intent is obscured, the index relates to a list only mentioned inside the test, likely confusing</li>
+<li>Indicies and the list must be maintained separately which WILL fail, if we add too many indicies, the failure will be obvious, but if we don&rsquo;t add new ones when we get a new test case, the tests will secretly not test that scenario which is a nightmare</li>
+</ul>
+<h1 id="something-a-bit-fancier-functions">Something a bit fancier, functions<a hidden class="anchor" aria-hidden="true" href="#something-a-bit-fancier-functions">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#a6e22e">[Values(Element1, Element2, Element3)]</span> Func&lt;MyElement&gt; element
+</span></span></code></pre></div><p>This allows us to point at functions that return an element we need, but again, we run up against problems.</p>
+<ul>
+<li>It&rsquo;s hard to maintain, we&rsquo;ll need to create a function for EVERY element, and if we have lots, this is going to get messy.</li>
+<li>Again as before with the lists, how do we maintain our good element set against this?</li>
+</ul>
+<h1 id="my-least-favourite-option-admitting-defeat">My least favourite option, admitting defeat<a hidden class="anchor" aria-hidden="true" href="#my-least-favourite-option-admitting-defeat">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#a6e22e">[Test, Combinatorial]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> MyTest()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">foreach</span>(<span style="color:#66d9ef">var</span> element <span style="color:#66d9ef">in</span> MyElements)
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span>(<span style="color:#66d9ef">var</span> otherValue <span style="color:#66d9ef">in</span> otherValues)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This means 1 test is shown in the test explorer for all the combinations, which makes debugging slow and tiresome, which makes this a bad test, abandoning combinatorial just isn&rsquo;t an option in my mind.</p>
+<h1 id="problems-so-far-with-every-approach">Problems so far with every approach<a hidden class="anchor" aria-hidden="true" href="#problems-so-far-with-every-approach">#</a></h1>
+<p>Let&rsquo;s review.</p>
+<ol>
+<li>Every test has a copy of the inputs, which is impossible to maintain</li>
+<li>Inputs are limited to what is readable, more than 10 per <code>[Values()]</code> gets messy</li>
+<li>Inputs MUST be constant which is limiting.</li>
+<li>I want to use combinatorial so I can easily see WHICH combination failed and iterate quickly</li>
+</ol>
+<h1 id="my-eventual-solution">My eventual solution<a hidden class="anchor" aria-hidden="true" href="#my-eventual-solution">#</a></h1>
+<p>What I really want, is easy ways to specify a list of mutable objects for each test that requires this combination approach, and sometimes I want to absolutely hammer a test with combinations of variables, that could exceed 1000 combinations, but maintain a readable test and be sure that I haven&rsquo;t missed any weird edge cases. It might be said that what I am making is too complex, but honestly, sometimes it be what it be.</p>
+<p>But how can we do this, we tried every <em>combination</em>&hellip; Or did we?
+What about that Values attribute? Does it have some secrets we can gleam?
+<a href="https://github.com/nunit/nunit/blob/main/src/NUnitFramework/framework/Attributes/ValuesAttribute.cs">https://github.com/nunit/nunit/blob/main/src/NUnitFramework/framework/Attributes/ValuesAttribute.cs</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ValuesAttribute</span>...
+</span></span></code></pre></div><p>Oh sweet googly moogly the attribute is not sealed!</p>
+<h2 id="victory-is-oh-so-sweet">Victory is oh so sweet<a hidden class="anchor" aria-hidden="true" href="#victory-is-oh-so-sweet">#</a></h2>
+<p>Learning this I decided I could inherit the attribute and create parameterised named collections.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ZoomLevelValuesAttribute</span> : ValuesAttribute
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> ZoomLevelValuesAttribute() : <span style="color:#66d9ef">base</span>(<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">33</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">273</span>, <span style="color:#ae81ff">500</span>) { }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ToggleValuesAttribute</span> : ValuesAttribute
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> ToggleValueAttribute() : <span style="color:#66d9ef">base</span>(<span style="color:#66d9ef">true</span>, <span style="color:#66d9ef">false</span>) { }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GoodElementsValuesAttribute</span> : ValuesAttribute
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> GoodElementsValueAttribute() : <span style="color:#66d9ef">base</span>() { <span style="color:#66d9ef">this</span>.data = Combinatorials.NewElements().Cast&lt;<span style="color:#66d9ef">object</span>&gt;().ToArray(); }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And now, my tests have never been more powerful, more readable, and more maintainable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"><span style="display:flex;"><span><span style="color:#a6e22e">[Test, Combinatorial]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> MyTest(
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [ToggleValues]</span> <span style="color:#66d9ef">bool</span> onOff,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [ZoomLevelValues]</span> <span style="color:#66d9ef">int</span> zoom,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [GoodElementsValues]</span> <span style="color:#66d9ef">object</span> myElement)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/nunit/">Nunit</a></li>
+      <li><a href="http://localhost:1313/tags/testing/">Testing</a></li>
+      <li><a href="http://localhost:1313/tags/combinatorial/">Combinatorial</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Clickety Clackety</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
