@@ -1,6 +1,6 @@
 blank_issues_enabled: false
 baseURL: "https://clicketyclackety.github.io/"
-title: "Clickety Clackety"
+title: "Callum Sykes"
 description: "A blog about coding and junk"
 keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
 author: Me
@@ -13,8 +13,8 @@ contact_links:
 
 params:
   homeInfoParams:
-    Title: Musings of Clicketyclackety
-    Content: If I think of something clever I'll put it here
+    Title: Documenting what I learn about Programming
+    Content: Hopefully these make your life a little less painful
 
   socialIcons: # optional
     - name: "github"
