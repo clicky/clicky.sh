@@ -10,7 +10,7 @@ ShowBreadCrumbs: true
 
 If you're reading this article, I'm going to assume you have a basic understanding of [combinatorial](https://docs.nunit.org/articles/nunit/writing-tests/attributes/combinatorial.html) and parameterising NUnit tests and now you are pushing up to the limits of this system.
 
-For the sake of simplicity, let's examine a simple Combinatorial Test
+For reference, let's examine a simple Combinatorial Test.
 
 ``` c#
 [Test, Combinatorial]
@@ -39,7 +39,7 @@ By using indicies, which are constant, we can index into a list maintained elsew
 - The intent is obscured, the index relates to a list only mentioned inside the test, likely confusing
 - Indicies and the list must be maintained separately which WILL fail, if we add too many indicies, the failure will be obvious, but if we don't add new ones when we get a new test case, the tests will secretly not test that scenario which is a nightmare
 
-# Something a bit fancier, functions
+# My next idea, funcs
 
 ``` c#
 [Values(Element1, Element2, Element3)] Func<MyElement> element
@@ -48,8 +48,10 @@ By using indicies, which are constant, we can index into a list maintained elsew
 This allows us to point at functions that return an element we need, but again, we run up against problems.
 - It's hard to maintain, we'll need to create a function for EVERY element, and if we have lots, this is going to get messy.
 - Again as before with the lists, how do we maintain our good element set against this?
+- Also, unfortunately, these don't count as consts. So they wouldn't work anyway. Sigh.
 
 # My least favourite option, admitting defeat
+I hate losing.
 
 ``` c#
 [Test, Combinatorial]
@@ -64,7 +66,7 @@ public void MyTest()
   }
 }
 ```
-This means 1 test is shown in the test explorer for all the combinations, which makes debugging slow and tiresome, which makes this a bad test, abandoning combinatorial just isn't an option in my mind.
+This means 1 test is shown in the test explorer for all the combinations, which makes debugging slow and tiresome, which makes this a bad test, abandoning combinatorial just isn't an option in my mind. So let's refuse defeat, and look at the problem differently.
 
 # Problems so far with every approach
 Let's review.
