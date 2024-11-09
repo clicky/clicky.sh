@@ -6,6 +6,7 @@ description: "Using Span<T> to map memory"
 tags: ["span", "low level", "c#"]
 ShowToc: false
 ShowBreadCrumbs: true
+draft: true
 ---
 
 I recently decided to figure out what `Span<T>` was all about and if I could find a use for it, I'd recently learnt a lot about c, the stack, the heap, memory allocation etc and `Span<T>` seemed like a really nice way to test and apply the concepts I've learnt to C#.
