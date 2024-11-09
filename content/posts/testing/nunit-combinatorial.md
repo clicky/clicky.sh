@@ -1,9 +1,9 @@
 ---
-author: "Me"
+author: "Callum Sykes"
 title: "Advanced Combinatorial Testing in NUnit"
-date: "2024-08-17"
+date: "2024-10-17"
 description: "A guide on upgrading your testing potential"
-tags: ["nunit", "testing", "combinatorial"]
+tags: ["nunit", "testing", "combinatorial", "c#"]
 ShowToc: false
 ShowBreadCrumbs: true
 ---

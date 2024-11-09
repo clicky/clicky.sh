@@ -3,9 +3,10 @@ baseURL: "https://clicketyclackety.github.io/"
 title: "Callum Sykes"
 description: "A blog about coding and junk"
 keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
-author: Me
+author: Callum Sykes
 theme: PaperMod
 defaultTheme: auto # dark, light
+DateFormat: "January 2, 2006"
 contact_links:
   - name: PaperMod Discussions
     url: https://github.com/adityatelange/hugo-PaperMod/discussions
