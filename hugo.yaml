@@ -1,25 +1,16 @@
 blank_issues_enabled: false
 baseURL: "https://clicketyclackety.github.io/"
-title: "Sykes"
+title: "Clicky"
 description: "A blog about coding and junk"
 keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
 author: Callum Sykes
 theme: PaperMod
 defaultTheme: auto # dark, light
 DateFormat: "January 2, 2006"
-contact_links:
-  - name: PaperMod Discussions
-    url: https://github.com/adityatelange/hugo-PaperMod/discussions
-    about: Please ask and answer questions/doubts here, DO NOT open an issue for questions.
 
 params:
   homeInfoParams:
-    Title: A little about me and 
-    Content: Hopefully these make your life a little less painful
-
-  socialIcons: # optional
-    - name: "github"
-      url: "https://github.com/clicketyclackety"
+    Content: Please make yourself at home
 
 ShowReadingTime: true
 ShowShareButtons: true
