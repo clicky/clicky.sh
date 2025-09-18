@@ -8,7 +8,7 @@ ShowToc: false
 ShowBreadCrumbs: true
 ---
 
-If you're reading this article, I'm going to assume you have a basic understanding of [combinatorial](https://docs.nunit.org/articles/nunit/writing-tests/attributes/combinatorial.html) and parameterising NUnit tests and now you are pushing up to the limits of this system.
+If you're reading this article, I'm going to assume you have a basic understanding of [combinatorial](https://docs.nunit.org/articles/nunit/writing-tests/attributes/combinatorial.html) and parametrising NUnit tests and now you are pushing up to the limits of this system.
 
 For reference, let's examine a simple Combinatorial Test.
 
@@ -28,16 +28,16 @@ But what if our tests need to be more complex than that? If we need to compare m
 
 So how can I maintain a comprehensive set of tests against this set of mutable objects?
 
-# My first attempt, indicies
+# My first attempt, indices
 
 ``` c#
 [Values(1, 2, 3)] int index
 ```
 
-By using indicies, which are constant, we can index into a list maintained elsewhere. Immediately however, I realised this has a few problems.
+By using indices, which are constant, we can index into a list maintained elsewhere. Immediately however, I realised this has a few problems.
 - It's not readable, when a new person looks at this test, what does this index mean?
 - The intent is obscured, the index relates to a list only mentioned inside the test, likely confusing
-- Indicies and the list must be maintained separately which WILL fail, if we add too many indicies, the failure will be obvious, but if we don't add new ones when we get a new test case, the tests will secretly not test that scenario which is a nightmare
+- Indices and the list must be maintained separately which WILL fail, if we add too many indices, the failure will be obvious, but if we don't add new ones when we get a new test case, the tests will secretly not test that scenario which is a nightmare
 
 # My next idea, funcs
 
