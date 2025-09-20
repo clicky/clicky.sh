@@ -6,7 +6,6 @@ description: "It's so shit"
 tags: ["Oh", "God", "null", "is", "agh,", "it's", "so", "shit"]
 ShowToc: false
 ShowBreadCrumbs: true
-draft: true
 ---
 
 I find programming quite beautiful, writing good code, good data and logic flow is enchanting to me.
@@ -21,7 +20,7 @@ I really like working in a space with immutable structures, enums, switches, fun
 
 Null shits all over this wonderful vibe like a racist Uncle at a Barbecue pervasively entering every conversation to interrupt with their unwelcome thoughts on Gay Marriage and Gender Identity.
 
-In this analogy the efficient, enjoyable readable flow of the code is interrupted by having to double check everything, litter my code with `?`'s, `??`'s, try catches, and all the extra effort that comes with being forced to converse with a drunk idiot.
+In this analogy the efficient, enjoyable readable flow of the code is interrupted by having to double check everything, litter my code with `?`'s, `??`'s, try catches, and all the extra effort that comes with being forced to mediate any conversation with a drunk idiot.
 
 # Null
 
@@ -56,20 +55,22 @@ public bool MyFunction(IInterface thing)
 {
   return thing switch
   {
-    _ => false
+    null => false,
+    _ => true
   }
 }
 ```
 
-If thing is null, there's no way for me to know what it was supposed to be outside of the interface.
-// This needs a better example
+If thing is null, there's no way for me to know what it was supposed to be outside of the interface. I can't check which values it has or should have and I also don't necessarily know _why_ it's null.
 
-It would be much better if every class could inherit a kind of `INull` interface and offer a fallback value instead I'd much prefer this, and generally if I can, I do implement an explicit 
+It would be much better if every class could inherit a kind of `INull` interface and offer a fallback value instead. I'd much prefer this, and generally if I can, I do implement an explicit 
 
 
 --> other article stuff
 
-I would really really like to avoid this
+### 4. Null takes up too much code real estate
+
+I would really really like to avoid this;
 
 ``` cs
 if (value is null)
@@ -78,13 +79,13 @@ if (value is null)
 }
 ```
 
-this
+this;
 
 ``` cs
 var result = value?.Property ?? defaultValue;
 ```
 
-and this
+and this;
 
 ``` cs
 try
@@ -95,11 +96,7 @@ try
 catch {}
 ```
 
-## Nothing
-
-A design note here, this isn't to say I always think a value should be "something", nothing is a very very useful state for a value
-
-### a?.b ?? c
+### 5. a?.b ?? c
 If the option was to have or not have `?` and `??` I'd vote to keep them, they're better than try catches  long form null checks everywhere. This example below is something I have to do every day and every time I have to add another one to fix a NullReferenceException I scream internally.
 
 ``` cs
@@ -114,7 +111,7 @@ public string MyFunction(object data1)
 }
 ```
 
-### Fixing nulls with exceptions
+### 6. Handling nulls with exceptions is terrible design
 
 ``` cs
 public void MyFunction(object data1, object data2)
@@ -123,6 +120,7 @@ public void MyFunction(object data1, object data2)
   // ...
 }
 ```
+
 I see this sort of thing A LOT. And I do NOT understand why. Thank you so much for resolving my null input by trying to crash my program. Bonus points if this exception is not documented in the doc strings. Returning a false is much safer and gives me a chance to handle it myself.
 
 ``` cs
@@ -133,28 +131,29 @@ public bool MyFunction(object data1, object data2)
 }
 ```
 
-### Not Sure
+### 7. Not Sure
 
-This function is already a disaster. The only 3 return options are an object, null or an exception. Hoo-.rah, and regardless of which it is, I need to check every possible result.
+This function is already a disaster. The only 3 return options are an object, null or an exception. Hoo-rah. And regardless of which it is, I need to check every possible result.
 
 ``` cs
 public object MyFunction(object data1, object data2)
 ```
 
-I'm a big proponent of the TrySomething pattern, as with above, any failures inside the method can return false.
+I'm a much prefer the TrySomething pattern, as with above, any failures inside the method can return false.
 
 ``` cs
 public bool TryMyFunction(object data1, object data2, out object result);
 ```
 
 Most importantly, the function can return this phrase which is something I'm very fond of as now I can ALWAYS trust this method to return something usable or give me a false.
+
 ``` cs
 return result is not null;
 ```
 
-### Landmine Constructors
+### 8. Landmine Constructors
 
-This constructor is like biting into a jam donut with a bee in it.
+This constructor is like biting into a jam donut with a bee in it. Nulls break the effectiveness of Constructors in my opinion.
 
 ``` cs
 public class MyClass
@@ -166,7 +165,7 @@ public class MyClass
 }
 ```
 
-If it is SO important that the input is not null, why did you allow for it in your design? If I'm not supposed to come to your birthday party without a present, tell me in advance, don't unload a shotgun in my face when I walk through the door empty handed.
+If it is SO important that the input is not null, why did you allow for it in your design? If I'm not supposed to come to your wedding without a present, tell me in advance, don't kick me in the shins when I walk through the door empty handed.
 
 ``` cs
 public class MyClass
@@ -183,23 +182,26 @@ public class MyClass
 }
 ```
 
-I don't really like constructors for the reasons above, they're not a great pattern. Instead a TryCreate is much safer.
+I don't really like constructors in languages with null for the reasons above, they're not a great pattern. Instead a TryCreate is much safer.
 
-### The resulting Try Pattern everywhere
-
-The result of all of this is I use this pattern every day everywhere. This is _kind of_ ok. As long as I don't need to do async, certain closures, parallelisation, and a few other scenarios.
-
-But it still feels shit. Why do I have to do this everywhere just to be sure I won't stub my toe?
+### 9. The resulting Try Pattern everywhere
 
 ``` cs
 public bool TryGetThing(object data, out object thing);
 ```
 
-# Solutions
+The result of all of this is I use this pattern every day everywhere. This is _kind of_ ok. As long as I don't need to do async, certain closures, parallelisation, and a few other scenarios.
+
+But it still feels shit. Why do I have to do this everywhere just to be sure I won't stub my toe?
+
+# Now what
+
+This isn't to say I always think a value should be "something", not-something-useful is a very very useful state for a value
+
 
 ## Immutability
 
-Using value types such as structs and enums can prevent the possibility of null entering our code.
+Using value types such as structs and enums will prevent nulls entering our code.
 
 ``` cs
 public enum Result { None = 0, Success, Failure }
@@ -221,13 +223,12 @@ public Point GetHighestPoint(IEnumerable<Point> points)
 }
 ```
 
-The only issue of course is structs and immutability may not be the best approach.
-Imagine a 10Mb Bitmap, that would be an awful struct.
+The only issue of course is structs and immutability may not be the best approach. Imagine a 10Mb Bitmap, that would be an awful struct.
 
-## Option<T>
-Rust doesn't have null, which is lovely. Instead it uses `Option<T>` and `Result<T>`.
-C# doesn't have these natively, but they're not too hard to include.
+## Options and Results
 
-This style of coding will prevent nulls, exceptions and heartache.
+Rust doesn't have null, which is lovely. Instead it uses `Option<T>` and `Result<T>`. C# doesn't have these natively [(yet)](https://github.com/dotnet/csharplang/issues/8928), but they're not too hard to create.
+
+This style of coding will prevent all nulls, exceptions and heartache as long as you handle every result and option. It looks a bit verbose, but your code will always run as you intended it to with no hidden surprises.
 
 Imagine a Thanksgiving where your intolerant relatives just weren't invited? Doesn't that sound simpler, nicer and also leave more Turkey for everyone?
