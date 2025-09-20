@@ -10,7 +10,7 @@ DateFormat: "January 2, 2006"
 
 params:
   homeInfoParams:
-    Content: Please make yourself at home
+    Content: It's me!
 
 ShowReadingTime: true
 ShowShareButtons: true
