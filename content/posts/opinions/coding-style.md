@@ -1,5 +1,5 @@
 ---
-author: "clicky"
+author: "Clicky"
 title: "Coding Style"
 date: "2024-11-08"
 description: "How I like to code in c#"
@@ -15,6 +15,8 @@ I've been coding in C# now for around 8 years and I've slowly developed my own o
 # #1. Null is Shit.
 // TODO : Clarify what null is vs None
 Avoid Null at all costs, it can only ever cause NullReferenceExceptions and problems. Null is a useless value to have in any situation. Never design null into your data flow or data types.
+
+Use `#nullable enable` in your files and projects.
 
 
 # #2. Functions should only ever return void, bool or non-nullables
@@ -67,7 +69,7 @@ Using exceptions in code is like using a 150 decibel alarm for your egg timer, i
 That being said, I do like _using_ exceptions! They are lots of excellent ways to use exceptions in control flow. But throwing them ruins control flow.
 
 ## Improving Exceptions
-Here is how I like to wrap external libraries to avoid issues with Exceptions, this guarantees my program will never crash due to something happening I haven't planned on handling, and I can actually used the exceptions to my advantage to return useful error messages to a user, or take different control routes.
+Here is how I like to wrap external libraries to avoid issues with Exceptions, this guarantees my program will never crash due to something happening I haven't planned on handling, and I can actually use the exceptions to my advantage to return useful error messages to a user, or take different control routes.
 
 ``` c#
 public async Task<bool> TryConnectToServer(string url, out string errorMessage)
@@ -80,11 +82,11 @@ public async Task<bool> TryConnectToServer(string url, out string errorMessage)
   }
   catch(Exception ex)
   {
-    error = ex switch
+    errorMessage = ex switch
     {
-        HubException => "Data Could Not BeSent",
+        HubException => "Data Could Not Be Sent",
         WebSocketException => "Server Indicated Possible Closure",
-        OperationCanceledException => "Server Closed Unexpectidly",
+        OperationCanceledException => "Server Closed Unexpectedly",
 
         _ => ex.Message,
     }
@@ -96,7 +98,7 @@ public async Task<bool> TryConnectToServer(string url, out string errorMessage)
 
 
 # #6. Use Record Structs and enums plentifully
-Record structs offer very quick and convenient ways of creating small data structures which improve readability, offer alternatives to null and make life simpler. I rarely use Record Structs for public data types, but I will use records or structs for public data types, mostly because if it's public, it needs more functions and options.
+Record structs offer very quick and convenient ways of creating small data structures which improve readability, offer alternatives to tuples and make life simpler. I rarely use Record Structs for public data types, but I will use records or structs for public data types, mostly because if it's public, it needs more functions and options.
 
 ``` c#
 private record struct DumbColour(int )

@@ -13,7 +13,7 @@ I find programming quite beautiful, writing good code, good data and logic flow 
 
 If you've ever watched Severance (no spoilers) the crew work on little computers in which they refine data entirely by how it makes them _feel_.
 
-![Macro Data Refinement](/static/images/macro-data-refinement.png)
+![Macro Data Refinement](/images/macro-data-refinement.png)
 
 As daft as looking at a bunch of numbers on a screen and sorting them by vibe sounds I'd definitely liken it to my coding style. Good code _feels_ comfy, reassuring and trustworthy. Bad code _feels_ unnerving, concerning, sometimes even anxiety inducing as your brain cannot walk through the control flow, ok code feels, also ok. It feels quite meh and I know in earnest I'll likely return on another sunnier day to turn it into good code.
 
@@ -25,7 +25,7 @@ In this analogy the efficient, enjoyable readable flow of the code is interrupte
 
 # Null
 
-Null exists to represent that a value is not anything. This is very useful, but there are a few issue with its general design.
+Null exists to represent that a value is not anything. This is theoretically useful, but there are a many critical issue with its general design.
 
 ### 1. I can still interact with null and I will be punished for doing so
 

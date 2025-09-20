@@ -10,16 +10,16 @@ ShowBreadCrumbs: true
 
 ![](/haida-gwaii/IMG20250801123927.jpg)
 
-![aasda](/haida-gwaii/IMG20250802150344.jpg)
+![](/haida-gwaii/IMG20250802150344.jpg)
 
-![aasda](/haida-gwaii/IMG20250802164106.jpg)
+![](/haida-gwaii/IMG20250802164106.jpg)
 
-![aasda](/haida-gwaii/IMG20250806071127.jpg)
+![](/haida-gwaii/IMG20250806071127.jpg)
 
-![aasda](/haida-gwaii/IMG20250806161031.jpg)
+![](/haida-gwaii/IMG20250806161031.jpg)
 
-![aasda](/haida-gwaii/IMG20250807173813.jpg)
+![](/haida-gwaii/IMG20250807173813.jpg)
 
-![aasda](/haida-gwaii/IMG20250807183917.jpg)
+![](/haida-gwaii/IMG20250807183917.jpg)
 
-![aasda](/haida-gwaii/IMG20250808062224.jpg)
+![](/haida-gwaii/IMG20250808062224.jpg)
