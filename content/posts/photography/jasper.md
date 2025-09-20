@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Around Jasper"
 date: "2025-08-31"
 description: "A few photos from an Around Jasper"

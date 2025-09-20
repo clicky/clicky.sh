@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Structs"
 date: "2025-02-18"
 description: "How do Structs work, really?"

@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Structs & Enums & Switches"
 date: "2024-10-17"
 description: "I absolutely love these things"

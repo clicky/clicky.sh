@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Haida Gwaii"
 date: "2025-08-01"
 description: "A few photos from Haida Gwaii"

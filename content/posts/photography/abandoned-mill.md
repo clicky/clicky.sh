@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Abandoned Mill"
 date: "2025-07-28"
 description: "A few photos from an Abandoned Mill"

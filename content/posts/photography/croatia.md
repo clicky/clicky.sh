@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Abandoned in Croatia"
 date: "2023-12-30"
 description: "Abandoned Buildings in Croatia"

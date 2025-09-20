@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Pillars of a Good Project"
 date: "2024-10-17"
 description: "Things I absolutely require to enjoy working on a project"

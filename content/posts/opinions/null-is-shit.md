@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Null is Shit"
 date: "2024-10-17"
 description: "It's so shit"

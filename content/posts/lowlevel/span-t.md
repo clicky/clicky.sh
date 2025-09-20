@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Using Span<T>"
 date: "2024-10-17"
 description: "Using Span<T> to map memory"

@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Coding Style"
 date: "2024-11-08"
 description: "How I like to code in c#"

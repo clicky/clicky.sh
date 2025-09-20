@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Code Generation"
 date: "2024-10-17"
 description: "My thoughts on Code generation"

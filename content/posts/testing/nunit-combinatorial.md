@@ -1,5 +1,5 @@
 ---
-author: "Callum Sykes"
+author: "clicky"
 title: "Advanced Combinatorial Testing in NUnit"
 date: "2024-10-17"
 description: "A guide on upgrading your testing potential"
