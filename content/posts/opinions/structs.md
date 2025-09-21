@@ -20,4 +20,4 @@ So I decided to dive _deep_ into structs and figure this out.
 A struct is a data type that is value type and lives on the stack*. For example an integer or boolean. Easy.
 
 
-*
+* In C# this true only under certain conditions, so for this article we'll only be using `ref structs` to ensure they live where they should. 

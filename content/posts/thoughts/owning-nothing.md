@@ -68,6 +68,7 @@ I really can't oversell all of this Merino Wool stuff it works so much better fo
 - Wallet (worn)
 I like my wallet but it's a bit big and heavy
 - Sunglasses (worn)
+- Second sunglasses
 
 ## Health
 - Medicines

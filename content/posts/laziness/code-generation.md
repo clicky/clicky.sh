@@ -22,12 +22,12 @@ As units are constant ratios and all live within a fixed ecosystem, it seemed to
 # Environment setup
 I set up my vscode into 4 panels
 On the top left I had my cunit code, unit generators etc.
-on the bottom left a termainl running dotnet watch
+on the bottom left a terminal running dotnet watch
 
 On the top right I had the generated results, usually the Meter
-On the bottom right I had another termainl running dotnet watch --tests
+On the bottom right I had another terminal running `dotnet watch --tests`.
 
-The net result of this is that every time I changed the file and hit save I would recieve instant feedback about that change, did the change break syntax, did it fail a test, did it even compile? Which let me develop at an absolutely astounding speed mostly because I could fix any bug almost instantly after introducing it.
+The net result of this is that every time I changed the file and hit save I would receive instant feedback about that change, did the change break syntax, did it fail a test, did it even compile? Which let me develop at an absolutely astounding speed mostly because I could fix any bug almost instantly after introducing it.
 
 # Conclusions
 This project showed me just how far dontnet has come since .net framework and how fantastic a project can be to work in, I've massively upped my standards for my minimum projects and I'm really happy with the result.

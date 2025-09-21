@@ -22,12 +22,12 @@ ALWAYS declare a default None = 0. Even if you wrote a program to return the out
 This is a perfect enum.
 
 ``` cs
-// Of course in the real world "Side" can happen, but we're inside a computer
+// Of course in the real world "Side" can happen, but we're inside a computer.
 public enum CoinFlipResult { None = 0, Heads, Tails }
 ```
 
 # Enums and switches are best friends.
-Enums and the newer C# switch statement compliment each other perfectly and I especially love that the compiler will warn if the `_ =>` is not included.
+Enums and the newer C# switch statement compliment each other perfectly and I especially love that the compiler will warn if the `_ =>` is not included. Personally I instruct my projects to see this as an error and prevent compilation.
 
 ``` cs
 public string FlipCoinResultMessage(FlipCoinResult result)
@@ -41,5 +41,30 @@ public string FlipCoinResultMessage(FlipCoinResult result)
   };
 ```
 
-# Things I LOVE and wish were in C#
-Options. C# (by design) is full of Nulls, which is a shame, because [Null is shit](../coding-style/#1-null-is-shit).
+# Structs
+
+Structs are beautiful, immutable, non-nullable data representations. 
+
+``` cs
+public readonly struct HtmlThing(int Value)
+{
+
+  public static Thing None => default;
+
+}
+```
+
+They also have this neato syntax that lets you take a copy with one property different.
+
+``` cs
+HtmlThing thing = new (20);
+HtmlThing newThing = thing with { Value = 40 };
+```
+
+# Structs and switches are best friends
+
+``` cs
+// Example of using structs
+```
+
+# Structs, Enums and clicky are best friends
