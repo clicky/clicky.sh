@@ -204,3 +204,56 @@ I will say if you ever plan to do this, having it be at your house would be infi
 ### Should I do this?
 
 I would advise trying it first if you can before you commit. The first month low key sucks, but you're learning to live in a completely different way which is frustrating. After that it's glorious.
+
+
+---
+
+# Build Pics
+
+![](/bus-life/build-pics/20220504_180444.jpg)
+
+How I bought the bus, most of the seats were already taken out, which made insurance less complex. > 8 seats is a bus which means I can't legally drive it, FUN FACT.
+
+![](/bus-life/build-pics/20220717_121400.jpg)
+
+I was pleasantly surprised to find the floor was not 100% rust. I cleaned it all up then painted it in some VERY expensive chemical that I think will outlast the bus and the human race, it had 5 different chemical warnings on it.
+
+![](/bus-life/build-pics/20230722_153424.jpg)
+
+I laid down some Damp proof membrane, insulation over top, a little wooden frame on the walls and floor and topped it off with some plywood. Did with a few friends too which was fun. The bed was mostly pieces of an IKEA bed I found free on Facebook Marketplace. I recall the man chuckling over a coffee as he watched me load this double bunk bed thing into a smart car. Jokes on him, it fit perfectly, and it was much too late to be drinking coffee, bet he slept like shit.
+
+![](/bus-life/build-pics/20231021_121504.jpg)
+
+Shower! Agh! The first thing that felt like I was making a little house. It took 3 attempts until the hole I drilled in the floor didn't hit an I beam of some kind.
+
+![](/bus-life/build-pics/20231021_155448.jpg)
+
+Woodworking is very satisfying, even if you're crap at it.
+
+![](/bus-life/build-pics/20240331_135116.jpg)
+
+Bad plumbing, this leaked a lot, but I did fix it.
+
+![](/bus-life/build-pics/20240406_140001.jpg)
+
+An actually not bad tile job. In retrospect, why did I pick hexagonal tiles for my first tile job, what was I thinking? That being said, I was so proud of this.
+
+![](/bus-life/build-pics/20240409_115910.jpg)
+
+Me welding one of my little seats. Got both done in about 4 hours which was pretty swish I thought. Then they got painted and installed. FUN FACT - BC doesn't seem to have seating regulations and whoever inspected the bus looked at them and said "looks fine" and legally I have 4 seats with seatbelts now. Wild.
+
+![](/bus-life/build-pics/20240608_180519.jpg)
+
+Fridge has a little casing. Note the perforated wall, it's so the wool insulation can breathe.
+
+![](/bus-life/build-pics/20240615_115119.jpg)
+
+SEATS! YEEAHHS Seats.
+
+![](/bus-life/build-pics/20240616_163457.jpg)
+
+Finished shower. So proud I included 2 pics.
+
+![](/bus-life/build-pics/20240630_110715.jpg)
+
+The bus mostly done, painted etc. 
