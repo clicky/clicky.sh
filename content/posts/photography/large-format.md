@@ -1,7 +1,7 @@
 ---
 author: "clicky"
 title: "Large Format"
-date: "2025-10-25"
+date: "2017-10-25"
 description: "The country, not the state."
 tags: ["photography", "abandoned", "mill"]
 ShowToc: false
