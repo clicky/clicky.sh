@@ -3,7 +3,7 @@ author: "clicky"
 title: "I live in a bus"
 date: "2025-12-15"
 description: "And I wouldn't want to live any other way"
-tags: ["photography", "abandoned", "mill"]
+tags: ["canada", "bus", "life"]
 ShowToc: false
 ShowBreadCrumbs: true
 ---
