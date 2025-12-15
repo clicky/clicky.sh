@@ -161,3 +161,46 @@ I just head in _A_ direction and see how that goes, often it might be towards wh
 Usually I'll create a map of all the places on the route I'm going and check out the top of my list and if that falls through, try option 2, 3, etc. I don't think I've ever gotten past option 2, and even that's rare. Rest stops are usually meh, (there's usually not much to do) but very dependable and the backbone of some longer trips. Casinos are very convenient, all of them will let you stay 1 night in their car park, they ask no money and there's no check-in or out times which for 1 night is perfect. They also have toilets which if not 24/7 will likely be 18/7, a coffee shop and restaurant which are often OK and fairly cheap (subsidised by gambled pensions). I'll often pick them over a campsite for a one night stop just due to convenience. For your first visit all of them will also give you about $10-$20 of "have fun" money. I always take this, gamble it and you're likely to win something back which I spend on lunch. I don't gamble otherwise, not my thing.
 
 No one has ever asked me to move or told me I can't park somewhere when I was going to stay overnight. Someone once informed me I couldn't park in a particular spot, I asked what will happen if I do, and they told me I'd get towed. I informed them that a tow truck for an 8 tonne bus takes a minimum of 3 hours to arrive so I can park anywhere for at least 2 hours. Surprisingly enough to me, most people find the converted bus very cool, and I think enjoyable rebellious, so most people are very accommodating, excited to ask about it, and even more excited to come aboard and look around.
+
+### Fuel
+
+I get lots of questions about fuel, as if the bus is a space ship.
+
+It takes Diesel, the fuel cap specifies unleaded which concerns me because I feel like that goes without saying?
+
+The tank is 240L.
+
+I don't know exactly how fuel efficient it is because the fuel gauge is free spirited. I think it's between 1000km and 1200km per tank. 
+
+Filling the tank costs ~ $400, So it's roughly 40c p/km, maybe a bit less honestly, depends on fuel prices.
+
+I don't spend that much in fuel, for the last trip, which was 5ish months I think I spent about $1400 on fuel total, so 3.5 tanks. Considering I spent $2k p/m on Rent, I think that's a bargain. I can also if I wish to, drive less and spend less which I think is very different than Rent which I can't easily alter the cost of by changing my lifestyle.
+
+### Did you come here in the bus?
+
+No, How? We're in Denmark (or wherever you're asking this), what kind of sway do you think I have with container ships or NASA?
+
+I get asked this in the most crazy of places. It's an American school bus, it can _only_ exist (without the involvement of major complications, costs, large bribes, lawyers and city planners) on the North American plate.
+
+### How did you buy it? Where from?
+Some bloke, it cost $18,000, was built in 2009 and had around 100,000 km on it. I was told the engine light only came on as it hadn't been driven in a while. What a gullible chump. I've since spent maybe $10k in various repairs and improvements since I've owned it (for about 5 years, travelling for 2). You can actually buy them from schools, which is where this one came from (go figure).
+
+### Was it pre-converted?
+
+Nope. I did everything. Largely because most options out there were half baked, done badly, or done VERY well and far exceeded my budget. To be fair even if I had the money I wouldn't buy pre-built. Building it is very satisfying. If you live in it full time, you're going to be fixing it and if it's your un-handiwork you know how to fix it which is very helpful. Definitely worth keeping spare bits around, fuses, screws, straps, tools etc.
+
+### Wow you must be handy!
+
+Nope. Nothing is straight, and I am a terrible plumber and it is not instagram-worthy. It does however _work_ and I love my bus and my space. I will give credit to myself for the electrics, that stuff has worked without issue.
+
+I do recall a friend coming to see me as I was working on the tiling and cutting it with a saw. He asked why I was using it without water. And pointed to the box where it said on the box "WET TILE SAW". I thought that meant it was for wet tiles like a bathroom. Anyway after adding water it was MUCH easier. So yeah. Not so handy. Stubborn to a fault though which helps finish things.
+
+That being said, I did take a welding course so I could weld the seats. I was quite proud of that. Welding is neato, my welds are very amateur but supposedly that doesn't matter _too_ much.
+
+I spent probably $3000 to $4000 building the interior (sans electrics which were roughly $10k). All of the wood I got free (as offcuts) from my previous job. Insulation and flooring was donated by a good friend, lots of bits and bobs were thrifted. So all I really paid for was the sink, fridge, screws and some tools.
+
+I will say if you ever plan to do this, having it be at your house would be infinitely easier, I did this near my house until I was told to move it, (quietly) at a U-Haul place until I had better options. I also stored all of the wood inside the bus as it was free and I needed it dry which was a huge pain in the arse.
+
+### Should I do this?
+
+I would advise trying it first if you can before you commit. The first month low key sucks, but you're learning to live in a completely different way which is frustrating. After that it's glorious.
