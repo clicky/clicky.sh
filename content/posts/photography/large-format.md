@@ -10,6 +10,8 @@ ShowBreadCrumbs: true
 
 A mix of 4x5", 9x12cm, 6x9 etc
 
+Some of my first attempts at larger formats. Large format is really fun and offers lots of creative options that 35mm doesn't somehow. Usually your camera has bellows, simple lenses and lots of flexibility. It also requires you to learn more about the equipment and try try try. As you can see, some of these are not at all museum quality. Art gallery sure, but not museum quality. The 6x6 shots are on 1967 Ilford film.
+
 ![](/large-format/room.jpg)
 ![](/large-format/ceiling-2.jpg)
 ![](/large-format/ceiling.jpg)
