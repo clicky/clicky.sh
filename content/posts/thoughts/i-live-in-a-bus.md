@@ -54,7 +54,7 @@ Converted buses are rare. I have seen a few, but not a lot.
 ![](/bus-life/IMG20250714161212.jpg)
 ![](/bus-life/IMG20250725130855.jpg)
 
-Sometimes I worry I'll get stuck. Them I remember this is fucking bus and it does not care.
+Sometimes I worry I'll get stuck. Then I remember this is fucking bus with a big commerical engine and it does not care.
 
 ![](/bus-life/IMG20250728073735.jpg)
 
@@ -85,7 +85,7 @@ It blows my mind there are campsites like this that are free for 2 weeks. I cack
 ![](/bus-life/20240823_111301.jpg)
 ![](/bus-life/20240825_203337.jpg)
 
-The sun always lets me know when bed time is. Which means time to read a book :)
+The sunset always lets me know when bed time is approaching. Which means time to read a book :)
 
 ![](/bus-life/20240828_113427.jpg)
 ![](/bus-life/20240831_133838.jpg)
@@ -98,7 +98,7 @@ The sun always lets me know when bed time is. Which means time to read a book :)
 ![](/bus-life/20240915_093201.jpg)
 ![](/bus-life/IMG20250702141730.jpg)
 
-Roof solar panels are awesome. The whole bus is powered by solar and I find that immensely gratifying. 
+Roof solar panels are awesome. The whole bus is powered by solar and I find that immensely gratifying. I have a little app where I can obsess over the Solar in and various power draws. Once my solar panels hit 110% efficiency, they can actually do that.
 
 ![](/bus-life/IMG20250707130004.jpg)
 ![](/bus-life/IMG20250709104543.jpg)
@@ -123,7 +123,7 @@ Roof solar panels are awesome. The whole bus is powered by solar and I find that
 
 ### How do you cook? Deal with food?
 
-Like regular people, but using camping equipment. It's much more flexible than having a fixed cooking stove. Most of the food in the fridge is vegetarian/vegan, I'm not strict about any particular diet I just like the taste of tofu and these kinds of foods last for months which is really useful if I intend to stay somewhere for a long time. I cannot express how much I do not want to endure food poisoning in the woods. The bus has a nice sized fridge and a small freezer. It doesn't take a lot of power (varies with the weather) but it is the most consistent power draw which takes most of the batteries because it runs 12 hrs a day (again, depending on the weather).
+Like regular people, but using camping equipment. It's much more flexible than having a fixed cooking stove. Most of the food in the fridge is vegetarian/vegan, I'm not strict about any particular diet I just like the taste of tofu and these kinds of foods last for months which is really useful if I intend to stay somewhere for a long time. I cannot express how much I do not want to endure food poisoning in the woods. The bus has a nice sized fridge and a small freezer. It doesn't take a lot of power (varies with the weather) but it is the most consistent power draw which takes most of the batteries because it runs on and off, an average I think of 12 hrs a day (again, depending on the weather).
 
 ![](/bus-life/IMG20251006115821.jpg)
 ![](/bus-life/IMG20251007141906.jpg)
@@ -142,7 +142,7 @@ Pancakes! A rare but enjoyable treat.
 
 The bus has a [composting toilet](https://natureshead.net/) which works very well, but if there are other toilets available I use those for obvious reasons. 
 
-The bus has a shower which works OK. But it uses a lot of water so it's only used now and then. Some campsites have showers, which are fab. Mostly I swim in lakes. I don't take body wash into them I just use a little afterwards. I find this works a lot better than I would have expected. This is likely because I cannot grow hair, so, YMMV. For those with hair, washing in the sink works quite well. Covering your head with water is extremely refreshing and not having it makes me quite miserable, lakes are the best for this, even if a bit chilly, but I have plenty of insulation so I don't mind.
+The bus has a shower which works OK. But it uses a lot of water so it's only used now and then. Some campsites have showers, which are a welcome treat. Mostly I swim in lakes. I don't take body wash into them I just use a little afterwards. I find this works a lot better than I would have expected. This is likely because I cannot grow hair, so, YMMV. For those with hair, washing in the sink works quite well. Covering your head with water is extremely refreshing and not having it makes me quite miserable, lakes are the best for this, even if a bit chilly, but I have plenty of insulation so I don't mind.
 
 ### Power, heat etc.
 

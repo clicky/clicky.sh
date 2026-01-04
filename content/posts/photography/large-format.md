@@ -2,8 +2,8 @@
 author: "clicky"
 title: "Large Format"
 date: "2017-10-25"
-description: "The country, not the state."
-tags: ["photography", "abandoned", "mill"]
+description: "Well, mostly."
+tags: ["photography", "abandoned", "large", "format", "medium"]
 ShowToc: false
 ShowBreadCrumbs: true
 ---
