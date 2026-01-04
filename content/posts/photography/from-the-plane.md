@@ -6,7 +6,6 @@ description: "I looked out of the window"
 tags: ["photography", "plane", "clouds"]
 ShowToc: false
 ShowBreadCrumbs: true
-draft: true
 ---
 
 ![](/from-the-plane/plane-trail.jpg)
