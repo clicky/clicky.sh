@@ -48,6 +48,17 @@ So any company offering AI I can't trust that it'll be around in a year, two yea
 
 Local models largely resolve this problem. I could download a model from huggingface with some python code and stuff it onto a Raspberry pi that I never connect to the internet ever again.
 
+## Responsibility
+**ADDED : 4th June 2026**
+
+I vibe-coded a small project in typescript to automate tasks locally with some llm-y-ness inside it. I have not seen any of the code, and I'm quite astounded how well the first version worked. After some more hours of asking for improvements etc I went for a walk and asked claude to whirr for an hour and just improve things. It did a fantastic job. 
+
+Why would anyone ever hire a programmer again? Why involve humans at all? Why pay for a service?
+
+I think ultimately where the rubber hits the tarmac is human to human responsibility and trust. If a service is worth paying for, let's use Figma as an example. Figma is worth paying for because it handles all of the connectivity and hosting. Even if they 100% vibe code it, as a consumer of the app you expect it to work, and if it doesn't you'll stop using it and sales drop as a result.
+
+If a human receives your service, they expect it to work, and if it doesn't, the seller is held responsible, either by losing a customer + money, or violating an SLA or agreement the two parties have together. (This only gets more and more important when you're dealing with sensitive data etc). In which case, someone at canva, who again, may 100% vibe code this has to be willing to take responsibility when the axe falls (e.g job loss). And the only way I'd be willing to take that responsibility is if I understood the code.
+
 ## Consciousness
 
 Imagine you are in a burning building. In front of you are two things. A cat, and ChatGPT on a thumb drive, the destruction of which will mean ChatGPT is gone and can never be restored. In effect it will "die".
