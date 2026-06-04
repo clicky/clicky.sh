@@ -15,45 +15,41 @@
             ],
             "presentation": {
                 "reveal": "always",
+                "panel": "dedicated",
             },
             "isBackground": true,
-            "problemMatcher": [
-                {
-                    "owner": "hugo",
-                    "fileLocation": "absolute",
-                    "pattern": {
-                        "regexp": "^(Error):.*\"(.*?):(\\d*):(\\d*)\": (.*)",
-                        "severity": 1,
-                        "file": 2,
-                        "line": 3,
-                        "column": 4,
-                        "message": 5,
-                    },
-                    "background": {
-                        "activeOnStart": false,
-                        "beginsPattern": "^Start building .*",
-                        "endsPattern": "^", /*Dont match anything*/
-                    }
-                },{
-                    "owner": "hugo",
-                    "fileLocation": "absolute",
-                    "pattern": {
-                        "regexp": "^(ERROR).*\"(.*?):(\\d*):(\\d*)\": (.*)",
-                        "severity": 1,
-                        "file": 2,
-                        "line": 3,
-                        "column": 4,
-                        "message": 5,
-                        "loop": true,
-                    },
-                    "background": {
-                        "activeOnStart": false,
-                        "beginsPattern": "Change detected.*",
-                        "endsPattern": "Total in .*",
-                    }
+            "problemMatcher": {
+                "owner": "hugo",
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^(ERROR|WARN).*?\"(.*?):(\\d+):(\\d+)\": (.*)$",
+                    "severity": 1,
+                    "file": 2,
+                    "line": 3,
+                    "column": 4,
+                    "message": 5,
+                },
+                // Tells VS Code when the dev server is "ready" so the debug
+                // launch can proceed. Hugo 0.162 prints no "Web Server is
+                // available" line, the version banner is the last startup line.
+                "background": {
+                    "activeOnStart": false,
+                    "beginsPattern": "^Start building sites",
+                    "endsPattern": "^(hugo v|Web Server is available|Built in|Total in)",
                 }
-            ],
+            },
             "group": "build"
+        },
+        {
+            "label": "stop server",
+            "command": "lsof -ti tcp:1313 | xargs kill 2>/dev/null || true",
+            "type": "shell",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated",
+                "close": true,
+            },
+            "problemMatcher": []
         }
     ]
 }

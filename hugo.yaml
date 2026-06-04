@@ -3,12 +3,17 @@ baseURL: "https://clicketyclackety.github.io/"
 title: "Clicky"
 description: "A blog about coding and junk"
 keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
-author: Callum Sykes
 theme: PaperMod
 defaultTheme: auto # dark, light
 DateFormat: "January 2, 2006"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allow raw HTML in markdown (e.g. the <video> embed in posts)
+
 params:
+  author: Callum Sykes
   homeInfoParams:
     Content: It's me!
 
