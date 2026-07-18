@@ -18,6 +18,12 @@ I started using CoPilot and ChatGPT very early when I first heard about them (20
 
 I am now using Claude Code extensively and very much enjoying it doing lots of awful, boring grunt tasks and code research for me. Prototyping and iterating has become very quick and fun. I'm also using, and now creating, MCP Servers.
 
+**UPDATE : 17th July 2026**
+
+I am still using Claude Code, but the honeymoon period is wearing off and there's something not quite right about it. Whilst I find Claude very useful for certain tasks, and do enjoy some of these, it does not spark joy. Writing code and developing applications I care about with it is absolutely joyless, and I've only just started to realise it. I've heard it said users don't care if you vibe code, and I think this is largely true. I find making something good, something polished, crafted with love, is not possible (for me) without being in the weeds and doing this myself. I spent my day today iterating on menus. Just menus. I spent all day trying things, learning things, bashing my head against the wall and discovering things I did not know. The end result was something that a Callum from yesterday could not have achieved without this process. And as a lover of the journey, I can see what I have been missing whilst experimenting with AI. If not for the MCP work I have been doing, yesterday would have uninstalled all AI from my machine.
+
+Ultimately my goal in this life is to seek and bring joy, this tool does not bring me joy.
+
 ## AI Revolution
 
 I've heard people compare AI to looms and the industrial revolution where we saw a huge shift from manual human labour to automated machines in factories. I don't think this is a good comparison. I'm from Manchester originally, I've seen (and used) manual looms and I've seen automated looms, they're an incredible thing to behold. But there's something that seems to be ignored when comparing AI to other parts of human history. AI is not determinate. A loom is very much `f(x) = y`. A loom set to a given encoded program will produce the exact same pattern every time. LLMs are non-determinate ^[2], they do not produce the same output for the same input.
@@ -29,6 +35,10 @@ I do think AI is likely to be a revolution, largely because of the gargantuan am
 It seems this determinative thing does not really matter at all. I'm able to iterate and get claude to create me things I need. Even if it does a slightly different job each time, this feels negligible. That being said, I am not sure how long this will last, or if this is a good comparison, the loom had a very determinative ROI, whereas AI has so much proprietary dependence.
 
 What has spurred this update and change of page? In a word, Harnesses. The way Claude Code functions is absolutely excellent. I now use it every day and enjoy doing so. I read a long time ago that the winner of the AI Revolution will be the one who makes the best box to put AI in. I think they are right.
+
+**UPDATE 17th July 2026**
+
+After using Claude in the area it feels like it was designed for and has the most training for. I have to say that it is untrustworthy and and the solutions it comes up with are uninspiring and very often not good. It lies to me constantly and then admits it after the fact. I have found that when I want to do something I care about, this quickly becomes unacceptable.
 
 ## Ethical Concerns
 
@@ -58,6 +68,9 @@ Why would anyone ever hire a programmer again? Why involve humans at all? Why pa
 I think ultimately where the rubber hits the tarmac is human to human responsibility and trust. If a service is worth paying for, let's use Figma as an example. Figma is worth paying for because it handles all of the connectivity and hosting. Even if they 100% vibe code it, as a consumer of the app you expect it to work, and if it doesn't you'll stop using it and sales drop as a result.
 
 If a human receives your service, they expect it to work, and if it doesn't, the seller is held responsible, either by losing a customer + money, or violating an SLA or agreement the two parties have together. (This only gets more and more important when you're dealing with sensitive data etc). In which case, someone at canva, who again, may 100% vibe code this has to be willing to take responsibility when the axe falls (e.g job loss). And the only way I'd be willing to take that responsibility is if I understood the code.
+
+**ADDENDUM : 17th July 2026**
+I think too that basing your business on something that could drastically change price, lie, fail is irresponsible, that said, capitalism is system that promotes responsibility, so maybe more unregulated countries will see many business that do. I think that if countries want to promote human skill, then increasing the severity and ease of punishment for things like user data leaks and SLA contract downtime would ensure companies have a human they can trust managing those parts of the business. 
 
 ## Consciousness
 
