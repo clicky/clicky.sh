@@ -1,34 +1,52 @@
-blank_issues_enabled: false
 baseURL: "https://clicketyclackety.github.io/"
 title: "Clicky"
 description: "A blog about coding and junk"
-keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
 theme: PaperMod
-defaultTheme: auto # dark, light
-DateFormat: "January 2, 2006"
 
 markup:
   goldmark:
     renderer:
       unsafe: true # allow raw HTML in markdown (e.g. the <video> embed in posts)
 
+outputs:
+  home: [HTML, RSS, JSON]
+
 params:
   author: Callum Sykes
+  keywords: [Blog, Portfolio, Clicky, Rhino, Coding, Software]
+  defaultTheme: auto # dark, light
+  DateFormat: "January 2, 2006"
   homeInfoParams:
     Content: It's me!
 
-ShowReadingTime: true
-ShowShareButtons: true
-ShowPostNavLinks: true
-ShowBreadCrumbs: true
-ShowCodeCopyButtons: false
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-disableSpecial1stPost: false
-disableScrollToTop: false
-comments: false
-hidemeta: false
-hideSummary: false
-showtoc: false
-tocopen: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+menu:
+  main:
+    - name: Archive
+      url: /archives/
+      weight: 10
+    - name: Tags
+      url: /tags/
+      weight: 20
+    - name: Search
+      url: /search/
+      weight: 30
+    - name: RSS
+      url: /index.xml
+      weight: 40
