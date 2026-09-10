@@ -1,6 +1,6 @@
 ---
 author: "clicky"
-title: "Coding Style"
+title: "AI Assisted"
 date: "2026-09-09"
 description: "How I now code with an AI agent."
 tags: ["c#", "coding", "style"]
