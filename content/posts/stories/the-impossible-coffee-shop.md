@@ -22,7 +22,7 @@ Catching a reassuring glance of myself in the glass of a photo on the wall remin
 
 The fruits of his labour yielded a walnut coloured drink which he presented to me and watched with anticipation. I lifted the cup with both hands and drank from it ceremoniously, if I'm unsure of where I am, what the time even is I'll damn well make sure I'm as polite as I can be to stay in the good graces of _the room_.
 
-I bowed graciously as I left, to which he returned a satisfied smile and waved me goodbye, which is not something (humans?) usually do in coffee shops and as I left, I made a mental note to return and 
+I bowed graciously as I left, to which he returned a satisfied smile and waved me goodbye, which is not something I usually do in coffee shops, but the occasion deserved it, and as I left, I made a mental note to return.
 
 ---
 
